@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .section p, .section li {
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="curriculoForm">
+            <h1>Currículo</h1>
+            
+            <div class="section">
+                <h2>Dados Pessoais</h2>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento">
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Objetivo</h2>
+                <div class="form-group">
+                    <label for="objetivo">Descreva seu objetivo profissional:</label>
+                    <textarea id="objetivo" name="objetivo" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Formação Acadêmica</h2>
+                <div class="form-group">
+                    <label for="instituicao">Instituição de Ensino:</label>
+                    <input type="text" id="instituicao" name="instituicao">
+                </div>
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso">
+                </div>
+                <div class="form-group">
+                    <label for="periodo">Período (Início - Término ou Previsão de Término):</label>
+                    <input type="text" id="periodo" name="periodo">
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Experiência Profissional</h2>
+                <div class="form-group">
+                    <label for="empresa1">Nome da Empresa 1:</label>
+                    <input type="text" id="empresa1" name="empresa1">
+                </div>
+                <div class="form-group">
+                    <label for="cargo1">Cargo:</label>
+                    <input type="text" id="cargo1" name="cargo1">
+                </div>
+                <div class="form-group">
+                    <label for="periodo1">Período (Mês/Ano - Mês/Ano):</label>
+                    <input type="text" id="periodo1" name="periodo1">
+                </div>
+                <div class="form-group">
+                    <label for="atividades1">Principais Atividades e Responsabilidades:</label>
+                    <textarea id="atividades1" name="atividades1" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="empresa2">Nome da Empresa 2:</label>
+                    <input type="text" id="empresa2" name="empresa2">
+                </div>
+                <div class="form-group">
+                    <label for="cargo2">Cargo:</label>
+                    <input type="text" id="cargo2" name="cargo2">
+                </div>
+                <div class="form-group">
+                    <label for="periodo2">Período (Mês/Ano - Mês/Ano):</label>
+                    <input type="text" id="periodo2" name="periodo2">
+                </div>
+                <div class="form-group">
+                    <label for="atividades2">Principais Atividades e Responsabilidades:</label>
+                    <textarea id="atividades2" name="atividades2" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Qualificações e Habilidades</h2>
+                <div class="form-group">
+                    <label for="habilidades">Liste suas principais qualificações e habilidades:</label>
+                    <textarea id="habilidades" name="habilidades" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Idiomas</h2>
+                <div class="form-group">
+                    <label for="idiomas">Idioma e Nível de Proficiência:</label>
+                    <textarea id="idiomas" name="idiomas" rows="2"></textarea>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Cursos e Certificações</h2>
+                <div class="form-group">
+                    <label for="cursoCertificacao">Curso/Certificação:</label>
+                    <input type="text" id="cursoCertificacao" name="cursoCertificacao">
+                </div>
+                <div class="form-group">
+                    <label for="instituicaoCertificacao">Instituição:</label>
+                    <input type="text" id="instituicaoCertificacao" name="instituicaoCertificacao">
+                </div>
+                <div class="form-group">
+                    <label for="anoConclusao">Ano de Conclusão:</label>
+                    <input type="text" id="anoConclusao" name="anoConclusao">
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Informações Adicionais</h2>
+                <div class="form-group">
+                    <label for="informacoesAdicionais">Descreva outras informações relevantes:</label>
+                    <textarea id="informacoesAdicionais" name="informacoesAdicionais" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <button type="button" onclick="baixarCurriculo()">Baixar Currículo</button>
+        </form>
+    </div>
+
+    <script>
+        function baixarCurriculo() {
+            const form = document.getElementById('curriculoForm');
+            const formData = new FormData(form);
+            let curriculoText = '';
+
+            // Itera pelos campos do formulário para montar o texto do currículo
+            formData.forEach((value, key) => {
+                curriculoText += `${key}: ${value}\n`;
+            });
+
+            // Cria o blob e o link para download
+            const blob = new Blob([curriculoText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'curriculo.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+
+</body>
+</html>
